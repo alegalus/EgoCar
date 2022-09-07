@@ -7,13 +7,16 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  width: 240px;
 
 `;
 const DataContainer = styled.div`
   display: flex;
-  
- 
-  gap: 8px;
+  justify-content: center;
+  gap:6px;
+  margin-bottom: -1em;
+  margin-top: -1em;
 `;
 const Name = styled.h2`
   font-family: "Montserrat";
@@ -30,6 +33,7 @@ const Paragraph = styled.p`
   font-size: 14px;
   line-height: 17px;
   color: black;
+  text-align: center;
 `;
 const Image = styled.img`
   width: ${(props) => (props.alerta ? "180px" : "240px")};

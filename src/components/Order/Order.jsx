@@ -25,12 +25,17 @@ const Order = () => {
       ...styles,
       background: "#f2f2f2",
       border: "none",
-      width: "180px",
+      width: "170px",
+     
+      
     }),
-    option: (styles) => ({
+    option: (styles, state) => ({
         ...styles,
         borderBottom: "1px solid #D8D8D8",
         height: "26px",
+        fontSize: "10px",
+        background: state.isSelected ? "#D1D6D6" : "White",
+        color: "#373737"
       }),
   };
   return (
