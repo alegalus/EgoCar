@@ -6,6 +6,7 @@ import Order from "../Order/Order";
 import FilterMobile from "../FilterMobile/FilterMobile";
 import FilterWeb from "../FilterWeb/FilterWeb";
 import s from "./Home.module.css";
+import { Nav } from "../Nav/Nav";
 
 
 export function Home() {
@@ -26,7 +27,8 @@ export function Home() {
   }, [screen]);
 
   return (
-   
+   <>
+   <Nav/>
     <div id={s.main}>
       <h2 className={s.tittle}>Descubrí todos los modelos </h2>
       <div id={s.filters}>
@@ -50,6 +52,8 @@ export function Home() {
       {/* <Footer/> */}
       <footer className={s.foot}></footer>
     </div>
+    
+    </>
     
    
   );

@@ -16,7 +16,7 @@ const FilterMobile = () => {
     { value: "Todos", label: "Todos" },
     { value: "Autos", label: "Autos" },
     { value: "Pickups y Comerciales", label: "Pickups y Comerciales" },
-    { value: "SUVs y Crossover", label: "SUVs y Crossover" },
+    { value: "SUVs y Crossover", label: "SUVs y Crossover",border: "none"  },
   ];
 
   const customStyle = {
@@ -34,6 +34,7 @@ const FilterMobile = () => {
       fontSize: "10px",
       background: state.isSelected ? "#D1D6D6" : "White",
       color: "#373737",
+      border: state.data.border
     }),
   };
   return (

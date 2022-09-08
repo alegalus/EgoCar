@@ -13,10 +13,10 @@ const Order = () => {
   }
 
   const options = [
-    { value: "Nada", label: "Nada" },
+    { value: "Nada", label: "Nada"},
     { value: "De menor a mayor precio", label: "De menor a mayor precio" },
-    { value: "De mayor a menor precio", label: "De mayor a menor precio" },
-    { value: "Mas nuevos primero", label: "Mas nuevos primero" },
+    { value: "De mayor a menor precio", label: "De mayor a menor precio"},
+    { value: "Mas nuevos primero", label: "Mas nuevos primero"},
     { value: "Mas viejos primero", label: "Mas viejos primero", border: "none" },
   ];
 
@@ -35,7 +35,8 @@ const Order = () => {
         height: "26px",
         fontSize: "10px",
         background: state.isSelected ? "#D1D6D6" : "White",
-        color: "#373737"
+        color: "#373737",
+        border: state.data.border
       }),
   };
   return (

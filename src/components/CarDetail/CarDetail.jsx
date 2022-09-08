@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { getCarDetail, clearDetail } from "../../actions/action";
+import { Nav } from "../Nav/Nav";
+import s from "./CarDetail.module.css"
 
 
 export function CarDetail(){
@@ -18,11 +20,14 @@ export function CarDetail(){
     };
   }, []);
     return(
+      <>
+      <Nav/>
         <div>
             <h1>Car detail</h1>
             <h2>{detail.name}</h2>
             <p>{detail.segment}</p>
             <img src={detail.photo} alt={detail.name} />
         </div>
+        </>
     )
 }

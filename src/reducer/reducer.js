@@ -75,7 +75,7 @@ function rootReducer(state = initialState, action) {
         let pickups = aux?.filter((el) => el.segment === action.payload)
         return {...state, allCars: pickups}
       }
-      if(action.payload === "SUVs y Crossover" ){
+      if(action.payload === "SUVs y Crossover" ){     
         let suvs = aux?.filter((el) => el.segment === "SUVs")
         let hatch = aux?.filter((el) => el.segment === "Hatchback" )
         let all = [...suvs, ...hatch]
