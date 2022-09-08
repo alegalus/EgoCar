@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
-import { getCarDetail } from "../../actions/action";
+import { getCarDetail, clearDetail } from "../../actions/action";
 
 
 export function CarDetail(){
@@ -11,6 +11,12 @@ export function CarDetail(){
     useEffect(() => {
         dispatch (getCarDetail(id))
     }, [dispatch])
+    //cuando desmonto el componente limpio los datos para que no sigan estando cuando vuelva
+  useEffect(() => {
+    return () => {
+      dispatch(clearDetail());
+    };
+  }, []);
     return(
         <div>
             <h1>Car detail</h1>

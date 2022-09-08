@@ -2,6 +2,7 @@ export const GET_ALL_CARS = "GET_ALL_CARS";
 export const GET_CAR_DETAIL = "GET_CAR_DETAIL";
 export const ORDER_CAR = "ORDER_CAR"
 export const FILTER_CAR = "FILTER_CAR"
+export const CLEAR_DETAIL = "CLEAR_DETAIL"
 const axios = require("axios").default;
 
 export function getAllCars() {
@@ -22,6 +23,10 @@ export function getCarDetail (id) {
       payload: json.data
     })
   }
+}
+
+export function clearDetail() {
+  return { type: CLEAR_DETAIL };
 }
 
 export function orderCar(payload){

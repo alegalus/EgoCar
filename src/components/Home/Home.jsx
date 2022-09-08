@@ -6,7 +6,7 @@ import Order from "../Order/Order";
 import FilterMobile from "../FilterMobile/FilterMobile";
 import FilterWeb from "../FilterWeb/FilterWeb";
 import s from "./Home.module.css";
-import { Footer } from "../Footer/Footer";
+
 
 export function Home() {
   let dispatch = useDispatch();
@@ -26,11 +26,11 @@ export function Home() {
   }, [screen]);
 
   return (
+   
     <div id={s.main}>
       <h2 className={s.tittle}>Descubrí todos los modelos </h2>
       <div id={s.filters}>
-        {screen < 1200 && <FilterMobile />}
-        {screen > 1200 && <FilterWeb />}
+        {screen < 1000 ? <FilterMobile /> : <FilterWeb />}
         <div id="order">
           <Order />
         </div>
@@ -47,9 +47,10 @@ export function Home() {
           />
         ))}
       </div>
-      <div>
-        <Footer />
-      </div>
+      {/* <Footer/> */}
+      <footer className={s.foot}></footer>
     </div>
+    
+   
   );
 }

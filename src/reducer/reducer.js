@@ -3,6 +3,7 @@ import {
   GET_ALL_CARS,
   GET_CAR_DETAIL,
   ORDER_CAR,
+  CLEAR_DETAIL
 } from "../actions/action";
 
 const initialState = {
@@ -22,6 +23,9 @@ function rootReducer(state = initialState, action) {
     }
     case GET_CAR_DETAIL: {
       return { ...state, carsDetail: action.payload };
+    }
+    case CLEAR_DETAIL: {
+      return { ...state, carsDetail: {} };
     }
     case ORDER_CAR: {
       if (action.payload !== "Nada") {
@@ -59,26 +63,28 @@ function rootReducer(state = initialState, action) {
       };
     }
     case FILTER_CAR: {
+      const aux = [...state.original];
       if(action.payload === "Todos"){
         return {...state, allCars: state.original}
       }
       if(action.payload === "Autos"){
-        let car = state.allCars?.filter((el) => el.segment === "Sedan")
+        let car = aux?.filter((el) => el.segment === "Sedan")
         return {...state, allCars: car}
       }
       if(action.payload === "Pickups y Comerciales"){
-        let pickups = state.allCars?.filter((el) => el.segment === action.payload)
+        let pickups = aux?.filter((el) => el.segment === action.payload)
         return {...state, allCars: pickups}
       }
       if(action.payload === "SUVs y Crossover" ){
-        let suvs = state.allCars?.filter((el) => el.segment === "SUVs")
-        let hatch = state.allCars?.filter((el) => el.segment === "Hatchback" )
+        let suvs = aux?.filter((el) => el.segment === "SUVs")
+        let hatch = aux?.filter((el) => el.segment === "Hatchback" )
         let all = [...suvs, ...hatch]
         return {...state, allCars: all}
       }
     }
     default:
       return state;
+      
   }
 }
 

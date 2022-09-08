@@ -1,21 +1,40 @@
-#main {
-  min-height: 100vh;
-  min-width: 100vw;
-  padding-top: 1px;
+body{
   background-color: #f2f2f2;
+  position: relative;
+  min-height: 100vh
+}
+#main{
+  position: relative;
+  min-height: 100vh;
 }
 
 #carCardPos {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  flex-direction: row;
+  align-items:flex-start;
   flex-wrap: wrap;
   margin: auto;
-  gap: 1.5em;
+  gap: 1em;
   width: 80%;
   height: 600px;
-  margin-top: 2em;
+  margin-top: 1em;
+
+ 
 }
+
+.foot{
+  height: 50px;
+  width: 100%;
+  background: black;
+  width: 100%;
+  margin-top: 1em;
+  padding-top: 0.5em;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
 
 .tittle {
   margin-left: 3em;
