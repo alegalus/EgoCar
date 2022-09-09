@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# Proyecto realizado como prueba tecnica para Agencia Ego 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Link del deploy: https://ego-car.vercel.app/
 
-## Available Scripts
+## Objetivos
 
-In the project directory, you can run:
+- Construir una App responsive utlizando React js.
+- Renderizar modelos de autos.
+- Filtrarlos / Ordenarlos.
+- Poder ver el detalle de cada modelo.
+
+ #### :tv: Tecnologías utilizadas:  
+:chart: React
+:chart: Redux
+
+## Librerias utilizadas
+:books: Styled-components para algunos estilos.
+:books: React select para filtros y ordenamiento.
+:books: react-horizontal-scrolling-menu para scroll horizontal.
+
+# Vistas del proyecto
+
+(vista pagina principal I)
+
+![Ego Car - Google Chrome 9_9_2022 14_48_40](https://user-images.githubusercontent.com/68312629/189414155-6ef013d0-f8f9-4fc9-80b5-64c079c93e81.png)
+
+(vista pagina principal II)
+
+![Ego Car - Google Chrome 9_9_2022 14_52_41](https://user-images.githubusercontent.com/68312629/189414766-92f163f5-cc9a-49db-8d72-b4106ee389bf.png)
+
+(Vista menu)
+
+![Ego Car - Google Chrome 9_9_2022 14_51_58](https://user-images.githubusercontent.com/68312629/189414934-a612b5cc-81ba-46d7-84da-a843d82b0e00.png)
+
+Vista Detalle
+
+![Ego Car - Google Chrome 9_9_2022 14_52_25](https://user-images.githubusercontent.com/68312629/189415019-95febdb1-123e-4aa6-a527-6ebfc674585e.png)
+
+
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+En caso de querer corre la aplicacion localmente, se puede forkear este repositorio, clonar, hacer npm install para que intale todas las dependencias utilizadas
+y correr con npm start, podra verlo en el navegador en el http://localhost:3000.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
