@@ -6,6 +6,9 @@ import { getCarDetail } from "../../actions/action";
 import "./burguer.css";
 
 export function Nav() {
+  //esta info la traigo para saber cuando detail tiene o no informacion, cuando no tiene voy a mostrar en el nav
+  //que estoy en la pagina principal de modelos, cuando ingrese al detalle de un modelo al estar con datos va a mostrar
+  //que estoy navegando en el detalle de un modelo en particular
   let dispatch = useDispatch();
   let detail = useSelector((state) => state.carsDetail);
 
@@ -22,12 +25,12 @@ export function Nav() {
     window.addEventListener("resize", handleResize);
   }, [screen]);
 
-  // to change burger classes
+  // para cambiar burger classes
   const [burger_class, setBurgerClass] = useState("burger-bar unclicked");
   const [menu_class, setMenuClass] = useState("menu hidden");
   const [isMenuClicked, setIsMenuClicked] = useState(false);
 
-  // toggle burger menu change
+  // toggle para el cambio del menu
   const updateMenu = () => {
     if (!isMenuClicked) {
       setBurgerClass("burger-bar clicked");
@@ -74,7 +77,9 @@ export function Nav() {
           </div>
         )}
         <div id="menuWeb">
-       <p className="cerrar">{isMenuClicked ? "Cerrar" : screen > 1000 &&  "Menú"}</p>
+          <p className="cerrar">
+            {isMenuClicked ? "Cerrar" : screen > 1000 && "Menú"}
+          </p>
           <div className="burger-menu" onClick={updateMenu}>
             <div className={burger_class}></div>
             <div className={burger_class}></div>
@@ -84,7 +89,9 @@ export function Nav() {
       </nav>
       <div className={menu_class}>
         <ul className={s.list}>
-        <Link id={s.link} to={"/"}><li>Modelos</li></Link>
+          <Link id={s.link} to={"/"}>
+            <li>Modelos</li>
+          </Link>
           <li>Servicios y Accesorios</li>
           <li>Financiación</li>
           <li>Reviews y Comunidad</li>

@@ -8,7 +8,6 @@ import FilterWeb from "../FilterWeb/FilterWeb";
 import s from "./Home.module.css";
 import { Nav } from "../Nav/Nav";
 
-
 export function Home() {
   let dispatch = useDispatch();
   let cars = useSelector((state) => state.allCars);
@@ -27,34 +26,31 @@ export function Home() {
   }, [screen]);
 
   return (
-   <>
-   <Nav/>
-    <div id={s.main}>
-      <h2 className={s.tittle}>Descubrí todos los modelos </h2>
-      <div id={s.filters}>
-        {screen < 1000 ? <FilterMobile /> : <FilterWeb />}
-        <div id="order">
-          <Order />
+    <>
+      <Nav />
+      <div id={s.main}>
+        <h2 className={s.tittle}>Descubrí todos los modelos </h2>
+        <div id={s.filters}>
+          {screen < 1000 ? <FilterMobile /> : <FilterWeb />}
+          <div id="order">
+            <Order />
+          </div>
         </div>
+        <div id={s.carCardPos}>
+          {cars?.map((car) => (
+            <Card
+              id={car.id}
+              key={car.id}
+              name={car.name}
+              year={car.year}
+              price={car.price}
+              photo={car.photo}
+            />
+          ))}
+        </div>
+        {/* <Footer/> */}
+        <footer className={s.foot}></footer>
       </div>
-      <div id={s.carCardPos}>
-        {cars?.map((car) => (
-          <Card
-            id={car.id}
-            key={car.id}
-            name={car.name}
-            year={car.year}
-            price={car.price}
-            photo={car.photo}
-          />
-        ))}
-      </div>
-      {/* <Footer/> */}
-      <footer className={s.foot}></footer>
-    </div>
-    
     </>
-    
-   
   );
 }

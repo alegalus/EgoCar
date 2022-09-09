@@ -12,6 +12,7 @@ const Order = () => {
     setOrder(value);
   }
 
+  //misma idea y funcionalidad que el filter mobile, utulizando la misma libreria y la misma forma de obtener y enviar la informacion.
   const options = [
     { value: "Nada", label: "Nada"},
     { value: "De menor a mayor precio", label: "De menor a mayor precio" },

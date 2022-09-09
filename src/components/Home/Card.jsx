@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import s from "./Card.module.css";
-
+//styled component para dar estilos a la card que renderiza los autos.
 const Container = styled.div`
   text-decoration: none;
   display: flex;
@@ -58,6 +58,8 @@ const But = styled.button`
 `;
 
 export function Card(props) {
+  //este estado y handler son para mostrar la opcion de ver mas detalles del producto cuando se presiona o para que oculte la misma
+  //cuando se vuelve a seleccionar el modelo del auto.
   const [show, setShow] = useState(false);
   let handleIn = () => {
     setShow(!show);

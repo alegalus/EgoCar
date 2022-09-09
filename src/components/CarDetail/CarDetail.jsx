@@ -7,8 +7,11 @@ import s from "./CarDetail.module.css";
 import { ScrollMenu } from "react-horizontal-scrolling-menu";
 
 export function CarDetail() {
+  //guardo el usedispatch para poder diparar las acciones
   let dispatch = useDispatch();
+  //guardo el id que viene por params
   let { id } = useParams();
+  //con el use selector me traigo la parte que quiero del state del reducer
   let detail = useSelector((state) => state.carsDetail);
 
   useEffect(() => {
@@ -20,7 +23,8 @@ export function CarDetail() {
       dispatch(clearDetail());
     };
   }, []);
-
+  //debido a que la api tiene alunos subniveles tengo que recorrelos primero para despues poder volver a recorrerlos y renderizarlos en
+  //pantalla. hicimos el recorrido de dos formas distintas.
   let arrHighlights = [];
   for (const item in detail.model_highlights) {
     let data = detail.model_highlights[item];
@@ -51,8 +55,9 @@ export function CarDetail() {
         </div>
         <img className={s.carImage} src={detail.photo} alt={detail.name} />
       </div>
-
+      {/* este es el sroll horizontal que usamos de la libreria react-horizontal-scrolling-menu*/}
       <ScrollMenu className={s.scroll}>
+        {/*como pusimos antes, volvemos a recorrer los objetos internos para poder renderizarlos */}
         {features?.map((el) => (
           <div className={s.scrollH}>
             <img className={s.scrollImage} src={el.image} alt={el.title} />
@@ -86,7 +91,8 @@ export function CarDetail() {
             <h2 className={s.extraTitle}>{el.title}</h2>
 
             <p className={s.extraParagraph}>
-              {el.content.slice(26,el.content.length-4)}
+              {/*la descripcion de algunos elementos tenia valores que no eran para mostrar en pantalla, con el slice eliminamos esosdatos. */ }
+              {el.content.slice(26, el.content.length - 4)}
             </p>
           </div>
         </div>

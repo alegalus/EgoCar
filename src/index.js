@@ -7,9 +7,10 @@ import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
 import store from "./store/store";
 
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
+  //aca conectamos el browserRouter a la app para que se rendericen nuestras rutas y conectamos el store
+  //al provider
   <React.StrictMode>
     <Provider store={store}>
       <BrowserRouter>

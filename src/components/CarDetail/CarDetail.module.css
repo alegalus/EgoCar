@@ -93,7 +93,6 @@
   justify-content: center;
   margin-top: 0em;
   margin-right: 5em;
-  
 }
 
 .extraDetails {
@@ -104,8 +103,6 @@
   height: 314px;
   margin-top: 1.5em;
   margin-bottom: 0em;
-  
-
 }
 
 .extraTitle {
@@ -135,7 +132,6 @@
   height: 200px;
   object-fit: contain;
   margin-right: 4em;
-  
 }
 
 .foot {
@@ -166,7 +162,7 @@
     margin-top: 1.5em;
   }
 
-  .extraImage{
+  .extraImage {
     height: 180px;
     margin-left: 4em;
   }
@@ -180,10 +176,9 @@
     margin-top: 2em;
     margin-bottom: 1em;
   }
-  .extraParagraph{
+  .extraParagraph {
     font-size: 12px;
   }
- 
 }
 
 @media only screen and (min-width: 400px) and (max-width: 450px) {
@@ -202,7 +197,7 @@
     margin-top: 1.5em;
   }
 
-  .extraImage{
+  .extraImage {
     height: 180px;
     margin-left: 4em;
   }
@@ -215,7 +210,7 @@
     width: 300px;
     margin-top: 2em;
   }
-  .extraParagraph{
+  .extraParagraph {
     font-size: 11px;
   }
 }
@@ -235,7 +230,7 @@
     font-size: 30px;
     margin-top: 1.5em;
   }
-  .extraImage{
+  .extraImage {
     height: 180px;
     margin-left: 4em;
   }
@@ -249,7 +244,7 @@
     width: 300px;
     margin-top: 2em;
   }
-  .extraParagraph{
+  .extraParagraph {
     font-size: 11px;
   }
 }
@@ -279,7 +274,7 @@
     width: 300px;
     margin-top: 2em;
   }
-  .extraParagraph{
+  .extraParagraph {
     font-size: 11px;
   }
 }
