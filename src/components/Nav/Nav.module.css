@@ -58,7 +58,7 @@
 
 li {
   margin-right: 3em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.4em;
   list-style-type: none;
   font-family: "Montserrat";
   font-style: normal;
@@ -78,6 +78,11 @@ li {
   height: 220px;
 }
 
-#link{
-    text-decoration: none;
+#link {
+  text-decoration: none;
+}
+@media screen and (min-width: 300px) and (max-width: 399px) {
+  #lastList {
+    margin-top: -1.6em;
+  }
 }

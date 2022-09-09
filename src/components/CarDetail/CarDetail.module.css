@@ -1,0 +1,285 @@
+.section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 4em;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 350px;
+  height: 314px;
+  margin-top: 3em;
+}
+
+.carName {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #0e0e0e;
+  margin-bottom: -1.8em;
+}
+
+.carTitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: -1px;
+  color: #373737;
+  text-align: left;
+  margin-bottom: 0em;
+}
+
+.carParagraph {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: -0.1px;
+  color: #373737;
+  text-align: justify;
+}
+
+.carImage {
+  width: 667px;
+  height: 380px;
+  object-fit: contain;
+}
+
+.scrollH {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  margin-top: 2em;
+  padding-top: 1em;
+  background-color: #ffffff;
+}
+.scrollImage {
+  width: 290px;
+  height: 146px;
+  border-radius: 8px;
+  margin: 0em 1em;
+}
+
+.scrollTitleContainer {
+  width: 290px;
+  margin: 0em 1em;
+}
+
+.scrollTitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #373737;
+  margin-bottom: -0.5em;
+}
+
+.extraSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 0em;
+  margin-right: 5em;
+  
+}
+
+.extraDetails {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 350px;
+  height: 314px;
+  margin-top: 1.5em;
+  margin-bottom: 0em;
+  
+
+}
+
+.extraTitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #373737;
+  margin-bottom: -0.5em;
+}
+
+.extraParagraph {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 27px;
+  letter-spacing: -0.1px;
+  color: #373737;
+  text-align: justify;
+}
+.extraImage {
+  margin-top: 2.5em;
+  border-radius: 8px;
+  width: 350px;
+  height: 200px;
+  object-fit: contain;
+  margin-right: 4em;
+  
+}
+
+.foot {
+  height: 50px;
+  width: 100%;
+  background: black;
+  width: 100%;
+  margin-top: 1em;
+  padding-top: 0.5em;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 399px) {
+  .carImage {
+    width: 360px;
+    order: -1;
+    margin-top: -8em;
+  }
+  .details {
+    width: 90%;
+    margin-top: -4em;
+  }
+
+  .carTitle {
+    font-size: 30px;
+    margin-top: 1.5em;
+  }
+
+  .extraImage{
+    height: 180px;
+    margin-left: 4em;
+  }
+
+  .extraSection {
+    margin-right: 0em;
+    margin-bottom: -3em;
+  }
+  .extraDetails {
+    width: 300px;
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+  .extraParagraph{
+    font-size: 12px;
+  }
+ 
+}
+
+@media only screen and (min-width: 400px) and (max-width: 450px) {
+  .carImage {
+    width: 360px;
+    order: -1;
+    margin-top: -8em;
+  }
+  .details {
+    width: 90%;
+    margin-top: -4em;
+  }
+
+  .carTitle {
+    font-size: 30px;
+    margin-top: 1.5em;
+  }
+
+  .extraImage{
+    height: 180px;
+    margin-left: 4em;
+  }
+
+  .extraSection {
+    margin-right: 0em;
+    margin-bottom: -3em;
+  }
+  .extraDetails {
+    width: 300px;
+    margin-top: 2em;
+  }
+  .extraParagraph{
+    font-size: 11px;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 840px) {
+  .carImage {
+    width: 450px;
+    order: -1;
+    margin-top: -8em;
+  }
+  .details {
+    width: 90%;
+    margin-top: -5em;
+  }
+
+  .carTitle {
+    font-size: 30px;
+    margin-top: 1.5em;
+  }
+  .extraImage{
+    height: 180px;
+    margin-left: 4em;
+  }
+
+  .extraSection {
+    margin: auto;
+    margin-bottom: -4em;
+    width: 90%;
+  }
+  .extraDetails {
+    width: 300px;
+    margin-top: 2em;
+  }
+  .extraParagraph{
+    font-size: 11px;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1030px) {
+  .carImage {
+    width: 450px;
+    order: -1;
+    margin-top: -8em;
+  }
+  .details {
+    width: 90%;
+    margin-top: -5em;
+  }
+
+  .carTitle {
+    font-size: 30px;
+    margin-top: 1.5em;
+  }
+
+  .extraSection {
+    margin: auto;
+    margin-bottom: -6em;
+    width: 90%;
+  }
+  .extraDetails {
+    width: 300px;
+    margin-top: 2em;
+  }
+  .extraParagraph{
+    font-size: 11px;
+  }
+}

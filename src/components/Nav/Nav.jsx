@@ -74,7 +74,7 @@ export function Nav() {
           </div>
         )}
         <div id="menuWeb">
-          <p className="cerrar">{isMenuClicked ? "Cerrar" : "Menú"}</p>
+       <p className="cerrar">{isMenuClicked ? "Cerrar" : screen > 1000 &&  "Menú"}</p>
           <div className="burger-menu" onClick={updateMenu}>
             <div className={burger_class}></div>
             <div className={burger_class}></div>

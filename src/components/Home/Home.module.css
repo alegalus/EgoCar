@@ -1,9 +1,9 @@
-body{
+body {
   background-color: #f2f2f2;
   position: relative;
-  min-height: 100vh
+  min-height: 100vh;
 }
-#main{
+#main {
   position: relative;
   min-height: 100vh;
 }
@@ -12,18 +12,16 @@ body{
   display: flex;
   justify-content: center;
   flex-direction: row;
-  align-items:flex-start;
+  align-items: flex-start;
   flex-wrap: wrap;
   margin: auto;
-  gap: 1em;
+  gap: 0em;
   width: 80%;
-  height: 600px;
-  margin-top: 1em;
-
- 
+  height: 480px;
+  margin-top: 1.5em;
 }
 
-.foot{
+.foot {
   height: 50px;
   width: 100%;
   background: black;
@@ -33,8 +31,8 @@ body{
   position: absolute;
   bottom: 0px;
   left: 0px;
+  z-index: 1000;
 }
-
 
 .tittle {
   margin-left: 3em;
@@ -56,5 +54,37 @@ body{
   border-bottom: 2px solid #d8d8d8;
 }
 
+@media screen and (min-width: 300px) and (max-width: 399px) {
+  .tittle {
+    margin-left: 1em;
+    font-size: 35px;
+  }
+  .foot {
+    top: 1900px;
+  }
+}
 
+@media only screen and (min-width: 400px) and (max-width: 450px) {
+  .tittle {
+    margin-left: 1em;
+    font-size: 35px;
+  }
+  .foot {
+    top: 1900px;
+  }
+}
 
+@media screen and (min-width: 700px) and (max-width: 840px) {
+  .tittle {
+    margin-left: 2em;
+  }
+  .foot {
+    top: 1100px;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1030px) {
+  .tittle {
+    margin-left: 2em;
+  }
+}

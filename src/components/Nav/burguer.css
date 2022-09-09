@@ -28,19 +28,18 @@
   font-size: 14px;
   line-height: 17px;
   color: #000000;
-  margin-top:20px;
+  margin-top: 20px;
 }
 
 .menu {
   width: 390px;
-  height: 80%;
+  height: 60%;
   background-color: #ffffff;
   position: absolute;
   top: 72px;
   right: 0px;
   z-index: 999;
 }
-
 
 .hidden {
   display: none;
@@ -71,3 +70,16 @@
   transform: rotate(0) translate(0);
   transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
 }
+@media screen and (min-width: 300px) and (max-width: 399px) {
+  .menu {
+    width: 360px;
+    height: 1900px;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 450px) {
+  .menu {
+    width: 414px;
+    height: 1900px;
+  }
+}
+
